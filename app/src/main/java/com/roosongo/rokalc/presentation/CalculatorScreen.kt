@@ -4,10 +4,17 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.roosongo.rokalc.R
 
 @Composable
 fun CalculatorScreen(
@@ -18,6 +25,20 @@ fun CalculatorScreen(
         color = MaterialTheme.colorScheme.background
     ) {
         Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.SpaceBetween) {
+            Box(
+                modifier = Modifier
+                    .background(MaterialTheme.colorScheme.secondaryContainer)
+                    .fillMaxWidth(),
+                contentAlignment = Alignment.TopEnd
+            ) {
+                Text(
+                    text = stringResource(R.string.author),
+                    style = TextStyle(
+                        fontSize = 12.sp,
+                        textAlign = TextAlign.End,
+                    )
+                )
+            }
             CalculatorDisplay(
                 expression = viewModel.expression,
                 modifier = Modifier
@@ -25,7 +46,7 @@ fun CalculatorScreen(
                     .weight(1f)
                     .clip(RoundedCornerShape(bottomStart = 25.dp, bottomEnd = 25.dp))
                     .background(MaterialTheme.colorScheme.secondaryContainer)
-                    .padding(vertical = 65.dp, horizontal = 16.dp)
+                    .padding(vertical = 58.dp, horizontal = 16.dp)
             )
             Spacer(modifier = Modifier.height(8.dp))
             CalculatorButtonGrid(
