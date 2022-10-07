@@ -9,6 +9,7 @@ import com.roosongo.rokalc.ui.theme.RokalcTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Constants.BASE_URL
         setContent {
             RokalcTheme {
                 CalculatorScreen()

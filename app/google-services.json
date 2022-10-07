@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "255060398161",
+    "project_id": "rokalc-810f1",
+    "storage_bucket": "rokalc-810f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255060398161:android:253a771295ef6af1522870",
+        "android_client_info": {
+          "package_name": "com.roosongo.rokalc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255060398161-20kp9hd3r8tuitugqphh1nme4e1h89sm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8_TAMr1S9WRo4JYDh-3FEIAxB8CwMj9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255060398161-20kp9hd3r8tuitugqphh1nme4e1h89sm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
